@@ -16,7 +16,7 @@ d = datetime.today() - timedelta(hours=3)
 def woj():
     woj_tweets = []
     for status in tweepy.Cursor(api.user_timeline, id="wojespn", tweet_mode="extended").items(100):
-        if ("Atlanta" in status.full_text) or ("Atlanta's" in status.full_text) or ("Hawks" in status.full_text) or ("hawks" in status.full_text):
+        if ("Spurs" in status.full_text) or ("Atlanta's" in status.full_text) or ("Hawks" in status.full_text) or ("hawks" in status.full_text):
             if ("@" in status.full_text):
                 continue
             if status.created_at >= d:
