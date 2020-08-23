@@ -2,13 +2,11 @@ import tweepy
 import time as timer
 from datetime import datetime, timedelta
 
-auth = tweepy.OAuthHandler('C733a1oBB5Ug9vty4XNDSFjTj', 'eaOE3Ao0RvIc2XPq2sTczc5TDCc0auqxVqCIktwI2bQUCTnQ4a')
-auth.set_access_token('1296946162256289796-2n1NiyiVw0lkxwVqyMoLSH4BEy7Smf', 'rtgMck21eVgoeXvfMLVkASHA73DgjSglkyWWqfmfAUESy')
+auth = tweepy.OAuthHandler('', '')
+auth.set_access_token('', '')
 api = tweepy.API(auth)
 
 user = api.me()
-
-# print(user.screen_name)
 
 d = datetime.today() - timedelta(hours=3)
 
